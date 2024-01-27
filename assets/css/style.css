@@ -111,7 +111,7 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 
 
 .navbar__link,
-.action__login {
+.header-action__login {
     color: #C9D2DA;
     font-size: 1.6rem;
     font-weight: 300;
@@ -120,7 +120,7 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 
 .navbar__link--active,
 .navbar__link:hover,
-.action__login:hover {
+.header-action__login:hover {
     color: #fff;
     text-shadow: 1px 0 currentColor;
 }
@@ -139,12 +139,82 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 }
 
 /* Action */
-.action__signup {
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
 }
 
-.action__signup:hover {
+.header-action__signup:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    /* flex-shrink: 0; */
+    width: 44%;
+}
+
+.hero__media {
+    flex-grow: 1;
+    width: 54%;
+}
+
+.hero__heading {
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    margin-top: 22px;
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.hero__phone {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 500px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    margin-right: -6px;
+    z-index: 2; /* hoặc dùng position: relative cũng được */
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
 }
