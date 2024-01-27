@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-bg: #10375C;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +13,138 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Sora', sans-serif;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+    display: inline-block;
+    min-width: 205px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 30px;
+    background: #2E80CE;
+    color: #FFF;
+    line-height: var(--height);
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #2E80CE;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    background: var(--header-bg);
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dùng đơn vị em để sau này ví dụ nếu tăng kích thước của logo
+thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều đang dùng đơn vị em */
+.logo {
+    /* 10px */
+    font-size: 1rem;
+    position: relative;
+    display: inline-flex;
+    gap: 0.6em;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2E80CE;
+}
+
+.logo__circle::after {
+    position: absolute;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+    top: 1.1em;
+    left: 1.1em;
+}
+
+.logo__text {
+    line-height: 1.6em;
+}
+
+.logo__brand {
+    text-align: right;
+    color: white;
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar__list {
+    display: flex;
+}
+
+
+.navbar__link,
+.action__login {
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 4px 21px;
+}
+
+.navbar__link--active,
+.navbar__link:hover,
+.action__login:hover {
+    color: #fff;
+    text-shadow: 1px 0 currentColor;
+}
+
+
+.navbar__link--active::before {
+    position: relative;
+    top: -3px;
+    left: -8px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 50%;
+}
+
+/* Action */
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
+}
+
+.action__signup:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
