@@ -385,3 +385,49 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
     font-weight: 400;
     line-height: 1.75;
 }
+
+/* Feature */
+.feature {
+    margin-top: 85px;
+    padding-top: 85px;
+}
+
+.feature__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+
+    /* Dùng padding-bottom:121px thay vì dùng bottom: -121px cho .feature__img: last-child
+    để tránh việc ảnh hiển thị chồng lên các  */
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    width: 332px;
+    height: 370px;
+    right: 0;
+    bottom: 0;
+}
+
+.feature__desc {
+    text-align: left;
+    width: 468px;
+    margin-bottom: 38px;
+}
