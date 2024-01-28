@@ -431,3 +431,95 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
     width: 468px;
     margin-bottom: 38px;
 }
+
+/* Member */
+.member {
+    padding: 85px 0;
+}
+
+.member-item {
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+    margin-top: 70px;
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #EAF6FF;
+    overflow: hidden;
+}
+
+.member-item__img {
+    /* Dùng display: block do các ảnh sẽ có 1 khoảng hở do display: inline tạo nên */
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+
+
+    /* Để cho các ảnh có chiều rộng bằng nhau */
+    height: 290px;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.member-item__title {
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.member__control {
+    text-align: center;
+    margin-top: 38px;
+}
+
+.member__control-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    width: 36px;
+    height: 36px;
+    color: #575F66;
+    background: #fff;
+    outline: none;
+    transition: 0.25s;
+}
+
+.member__control-next-icon {
+    transform: rotate(180deg);
+}
+.member__control-btn:hover {
+    background: #2E80CE;
+    border-color: #2E80CE;
+    color: #fff;
+    cursor: pointer;
+}
+
+.member__control-btn:first-child {
+    margin-right: 18px;
+}
