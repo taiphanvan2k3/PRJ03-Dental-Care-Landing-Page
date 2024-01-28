@@ -441,6 +441,10 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
     text-align: center;
 }
 
+.member-item:hover .member-item__img {
+    transform: scale(1.3);
+}
+
 .member__header {
     display: flex;
     align-items: center;
@@ -474,6 +478,7 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 
     /* Để cho các ảnh có chiều rộng bằng nhau */
     height: 290px;
+    transition: 0.25s;
 }
 
 .member-item__name {
@@ -513,6 +518,7 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 .member__control-next-icon {
     transform: rotate(180deg);
 }
+
 .member__control-btn:hover {
     background: #2E80CE;
     border-color: #2E80CE;
@@ -522,4 +528,54 @@ thì chỉ cần tăng font-size lên, vì các thông số ở dưới đều �
 
 .member__control-btn:first-child {
     margin-right: 18px;
+}
+
+/* Install */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #2E80CE;
+    padding: 0 70px;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__heading {
+    color: #FFF;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    max-width: 489px;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__desc {
+    max-width: 586px;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    text-align: left;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
 }
